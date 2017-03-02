@@ -1,0 +1,302 @@
+
+<HTML>
+<HEAD>
+<STYLE>
+body
+{
+border-radius: 20px;
+border-style: double;
+border-color: blue;
+position: absolute;
+width: 850px;
+height: 705px;
+top: 15px;
+left: 45px;
+padding: 30px 30px 50px 30px;
+background-color: #CCC;
+}
+#tbl,#tbl2
+{
+border-collapse:collapse;
+font-size:18;
+font-family:Century Gothic;
+}
+.demo
+{
+position:absolute;
+left:121px;
+top:400px;
+font-size:17;
+font-family:Arial;
+font-weight:bold;
+margin-top:35px;
+border-collapse:collapse;
+        height: 171px;
+        width: 683px;
+    }
+#demoname
+{
+font-size:15px
+}
+.btn
+{
+position:absolute;
+top:355px;
+left:720px;
+}
+    .auto-style1
+    {
+        width: 28px;
+    }
+</STYLE>
+
+<SCRIPT>
+    function myFun() {
+        var a = document.form1.txtname.value;
+        document.getElementById("demoname").innerHTML = a;
+        var b = document.form1.txtfname.value;
+        document.getElementById("demofname").innerHTML = b;
+       var c = document.getElementById("po").options[po.selectedIndex].text;
+document.getElementById("demora").innerHTML= c;
+var d = document.getElementById("p").options[p.selectedIndex].text;
+document.getElementById("demop").innerHTML= d;        
+        var e = document.form1.txtoffice.value;
+        document.getElementById("demooffice").innerHTML = e;
+
+      switch (true) {
+            case (b == "andheri"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 5 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bandra"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 6 * 2;;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "khar"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 7 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "vileparle"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 9 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "malad"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 11 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bhayandar"&&c=="Second"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 15 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "andheri"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 45 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bandra"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 56 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "khar"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 67 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "vileparle"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 79 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "malad"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 91 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bhayandar"&&c=="First"&&d=="Return"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 95 * 2;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "andheri"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 5;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bandra"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 6;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "khar"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 7;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "vileparle"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 9;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "malad"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 11;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bhayandar"&&c=="Second"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 15;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "andheri"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 45;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bandra"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 56;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "khar"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 67;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "vileparle"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 79;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "malad"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 91;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+            case (b == "bhayandar"&&c=="First"&&d=="Single"):
+                var ns = document.getElementById("demooffice").innerHTML;
+                var value = parseInt(ns) * 95;
+                document.getElementById("demototal").innerHTML = value;
+                break;
+        }
+
+        //Date Condition
+        if (a != '') {
+            document.getElementById("demod").innerHTML = Date();
+        }
+        
+        //Commute Message
+        if (a != '') {
+            document.getElementById("demor").innerHTML="Commute journey in 1HR";
+        }   
+
+        //Distance Indicator
+        switch(true)
+        {
+        case(b=="khar"):
+        document.getElementById("demok").innerHTML="12km";
+        break;
+        case(b=="andheri"):
+        document.getElementById("demok").innerHTML="7km";
+        break;
+        case(b=="bandra"):
+        document.getElementById("demok").innerHTML="9km";
+        break;
+        case(b=="bhayandar"):
+        document.getElementById("demok").innerHTML="14km";
+        break;
+        //Default Condition
+        case(b!=''):
+        document.getElementById("demok").innerHTML="17km";
+        break;
+         }
+}
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</HEAD>
+
+<BODY>
+<DIV class="color">
+<H1 align="center"style="font-family:cambria;font-size:40";><U>Urban railway</H1>
+<FIELDSET>
+<LEGEND> Route info </LEGEND>
+<TABLE align="center" id="tbl">
+<FORM name="form1">
+</TR>
+<TD width="140">Source</TD> <TD><INPUT type="text" name="txtname"/></TD>
+<TD> &nbsp; &nbsp;Destination</TD><TD> <INPUT type="text" name="txtfname"/></TD>
+</TR>
+
+<TR>
+<TD width="140" > CLASS </TD><TD><select id="po">
+  <option>First</option>
+  <option>Second</option>
+</select></TD>
+<TD style="text-indent:16px">TYPE:</TD><TD><select id="p">
+  <option>Single</option>
+  <option>Return</option>
+</select></TD>
+</TR>
+</TABLE>
+</FIELDSET></BR>
+<FIELDSET>
+<LEGEND> Ticket info </LEGEND>
+<TABLE id="tbl2">
+<TR>
+<TD> nos of tickets</TD><TD> <INPUT type="text" name="txtoffice" maxlength="3" size="10"/> </TD>
+</TR>
+<TR>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</FIELDSET>
+<DIV class="btn">
+<button style="font-size:17" type="button" onclick='myFun()'>Submit</button>
+<button style="font-size:17" type="Reset">Reset</button>
+</DIV>
+<DIV class="demo">
+  <TABLE border="1">
+<TR>
+<TH colspan="8" width="240"> Ticket info</TH>
+</TR>
+<TR>
+<TD class="auto-style1">Source</TD><TD><FONT face="arial" id="demoname"></FONT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">Destination</TD><TD><FONT face="arial" id="demofname"></FONT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">CLASS</TD><TD><p id="demora"></p></TD>
+</TR>
+<TD class="auto-style1">TYPE</TD> <TD><p id="demop"></p></TD>
+</TR>
+<TR>
+<TH colspan="8" width="240"> price info </TH>
+</TR>
+<TR>
+<TD class="auto-style1">Nos of tickets</TD><TD><FONT face="arial" id="demooffice"></FONT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">TOTAL PRICE:</TD><TD>&#8377;<FONT face="arial" id="demototal"></FONT></TT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">DISTANCE</TD><TD><FONT face="arial" id="demok"></FONT></TT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">DATE AND TIME</TD><TD><p id="demod"></p></TT></TD>
+</TR>
+<TR>
+<TD class="auto-style1">REMINDER</TD><TD><p id="demor"></p></TT></TD>
+</TR>
+</TABLE>
+</DIV>
+</DIV>
+</BODY>
+</HTML> 
+
